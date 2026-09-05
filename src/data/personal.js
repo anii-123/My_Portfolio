@@ -22,9 +22,9 @@ export const personal = {
   ],
 
   contact: {
-    email: "anishagurumukhi@gmail.com",
+    email: "anisha.gurumukhi@gmail.com",
     github: "https://github.com/anii-123",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/anisha-gurumukhi/",
     twitter: "https://x.com/",
     instagram: "https://instagram.com/",
     naukri: "https://www.naukri.com/",

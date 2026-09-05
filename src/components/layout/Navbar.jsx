@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Command, Code2, Sparkles, Mail } from 'lucide-react';
+import { Menu, X, Command, Sparkles, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { personal } from '../../data/personal';
 
@@ -41,17 +41,16 @@ const Navbar = ({ onOpenCommandPalette }) => {
             to="/"
             className="flex items-center gap-2.5 group cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 via-blue-500 to-cyan-400 p-[1px] shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform duration-300">
-              <div className="w-full h-full bg-[#0a0d14] rounded-[11px] flex items-center justify-center">
-                <Code2 className="w-5 h-5 text-purple-400 group-hover:rotate-12 transition-transform duration-300" />
-              </div>
+            <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-purple-500/40 shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <img
+                src="https://github.com/anii-123.png"
+                alt="Anisha Gurumukhi"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg tracking-tight text-white group-hover:text-purple-400 transition-colors">
                 Anisha Gurumukhi
-              </span>
-              <span className="text-xs text-purple-400/80 font-mono tracking-wider">
-                @{personal.githubUser}
               </span>
             </div>
           </Link>
